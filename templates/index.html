@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- meta information -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- bootstrap css with cdn -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- webpage title -->
+	<title>Flask Balls</title>
+</head>
+
+<!-- execute javascript function on page startup -->
+<body onload="flaskballs()"> 
+
+<!-- simple header of flaskballs -->
+<h1><u>FLASK BALLS</u></h1>
+
+<!-- apply our CSS to webpage -->
+<div class="container">
+
+	<div class="row">
+	  <div class="col">
+	    <!-- setup our canvas for flaskball -->
+            <canvas id="myCanvas" width="400" height="400"></canvas>
+	  </div>
+	  <div class="col">
+	    <!-- Flaskball config cell: wll print config of ball movement -->
+	    <h2><u>Config</u></h2>
+	    <p id="config"></p>
+	  </div>
+	</div>
+</div>
+        <!-- javascript -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+</html>
+
