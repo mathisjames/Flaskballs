@@ -10,6 +10,7 @@ app = Flask(__name__)
 
 # basic function to serve up flask HTML page #
 def index():
+	# render homepage for flaskballs #
 	return render_template('index.html')
 
 
